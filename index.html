@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamer | Veri Bilimi Portfolyosu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --bg-dark: #0f172a; --accent: #38bdf8; }
+        body { background-color: var(--bg-dark); color: white; font-family: 'Inter', sans-serif; }
+        .project-card { 
+            background: #1e293b; border: none; transition: transform 0.3s; 
+            height: 100%; border-radius: 15px; overflow: hidden;
+        }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2); }
+        .badge-tech { background: rgba(56, 189, 248, 0.1); color: var(--accent); border: 1px solid var(--accent); }
+        .hero { padding: 100px 0; text-align: center; background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%); }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Merhaba, Ben <span style="color: var(--accent)">Tamer</span></h1>
+        <p class="lead">Veri Bilimi, Makine Öğrenmesi ve Finansal Analiz meraklısı bir öğrenciyim.</p>
+        <div class="mt-4">
+            <a href="#projects" class="btn btn-outline-info px-4 py-2">Projelerimi Gör</a>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5" id="projects">
+    <h2 class="text-center mb-5">Seçkin Projeler</h2>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-chart-line me-2"></i>Algorithmic Trading & ML</h5>
+                    <p class="card-text text-secondary">Yfinance kullanarak borsa verileri üzerinde teknik indikatörler ve ML modelleri ile al-sat sinyalleri oluşturma.</p>
+                    <div class="mb-3">
+                        <span class="badge badge-tech">Python</span>
+                        <span class="badge badge-tech">Scikit-Learn</span>
+                        <span class="badge badge-tech">Pandas</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-info text-dark fw-bold">Repo'ya Git</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-camera me-2"></i>Gender Detection</h5>
+                    <p class="card-text text-secondary">OpenCV ve derin öğrenme modelleri kullanarak gerçek zamanlı yüz tespiti ve cinsiyet sınıflandırma.</p>
+                    <div class="mb-3">
+                        <span class="badge badge-tech">OpenCV</span>
+                        <span class="badge badge-tech">Deep Learning</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-info text-dark fw-bold">Repo'ya Git</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-brands fa-bitcoin me-2"></i>Crypto Price Prediction</h5>
+                    <p class="card-text text-secondary">Bitcoin ve Dogecoin için SVR ve AutoTS algoritmalarıyla gelecek fiyat projeksiyonları.</p>
+                    <div class="mb-3">
+                        <span class="badge badge-tech">SVR</span>
+                        <span class="badge badge-tech">Time Series</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-info text-dark fw-bold">Repo'ya Git</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa-solid fa-layer-group me-2"></i>Multi-Model Comparison</h5>
+                    <p class="card-text text-secondary">Emlak fiyat tahmini için XGBoost, SVR ve AdaBoost gibi modellerin performans analizi.</p>
+                    <div class="mb-3">
+                        <span class="badge badge-tech">XGBoost</span>
+                        <span class="badge badge-tech">Regression</span>
+                    </div>
+                    <a href="#" class="btn btn-sm btn-info text-dark fw-bold">Repo'ya Git</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+
+<footer class="py-4 text-center border-top border-secondary">
+    <p class="text-secondary">&copy; 2026 Tamer - GitHub Pages</p>
+</footer>
+
+</body>
+</html>
